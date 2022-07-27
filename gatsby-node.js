@@ -368,7 +368,7 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
               collapse: true,
               indent: false,
               items: latestPosts.map((item) => {
-                const date = moment(item.fields.lastUpdatedAt).format('MMMM Do YYYY, h:mm:ss a');;
+                const date = moment(item.fields.lastUpdatedAt).format('MMMM Do');;
                 let title = item.fields.title;
                 if (date) {
                   title = `${date}: ${title}`;
