@@ -24,7 +24,6 @@ This theme is inspired with [gatsby-project-kb](https://github.com/hikerpig/gats
 - Custom Header Nav Items
 - Nested Sidebar
 - Support Prefix Path
-- Support Draft Post
 
 ## Principles
 
@@ -114,10 +113,6 @@ You remote git repo url prefix.
 
 Advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js#L31-L67
 
-### Prefix Path
-
-See [here](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)
-
 ### Logo
 
 You can use `icon` as your site logo path. Example:
@@ -135,7 +130,6 @@ You can use `icon` as your site logo path. Example:
       nav: [],
       mdxOtherwiseConfigured: false, // advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js
       remarkPlugins: [], // add gatsby-plugin-mdx remarkPlugins
-      rehypePlugins: [], // add gatsby-plugin-mdx rehypePlugins
       gatsbyRemarkPlugins: [], // add gatsby-plugin-mdx gatsbyRemarkPlugins
       extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
       sidebarDefault: "auto", // first summary -> tags -> files tree , value can be auto, summary, tag, category
@@ -174,7 +168,7 @@ You can use `icon` as your site logo path. Example:
 
 ## Custom Sidebars
 
-Create a file named `SUMMARY.md` in your content directory, for the format, just following the [Gitbook](https://docs.gitbook.com/integrations/git-sync/content-configuration#summary) docs.
+Create a file named `SUMMARY.md` in your content directory, for the format, just following the [Gitbook](https://docs.gitbook.com/integrations/github/content-configuration#summary) docs.
 
 You can set a custom default sidebar depth using `sidebarDepth`, the default value is `0`
 
@@ -198,40 +192,14 @@ const theme = {
 export default theme;
 ```
 
-See the default primer theme at [here](./docs/primer-theme.json)
+See the default primer theme at [here](https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/docs/primer-theme.json)
 
-## Todos
+### Prefix Path
 
-- [x] - excerpt as seo description
-- [x] - support mobile instant view button
-- [x] - support nav items
-- [x] - support graph view
-- [x] - release workflow
-- [x] - readme add summary
-- [x] - pathPrefix test
-- [x] - qbittorrent with jackett mobile screen overflow
-- [x] - support tags search
-- [x] - support theme
-- [x] - Docs
-- [x] - Obsidian Support
-- [ ] - Theme auto mdx provider not apply dark mode
-- [x] - Show latest updates
-- [x] - theme custom
+See [here](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)
 
-## Screenshot
+## Custom Sidebars
 
-### Home
+Create a file named `SUMMARY.md` in your content directory, for the format, just following the [Gitbook](https://docs.gitbook.com/integrations/github/content-configuration#summary) docs.
 
-![Index](./assets/screenshot.jpg)
-
-### Backlinks & Tags
-
-![Footer](./assets/bootom.jpg)
-
-### Graph Visualisation
-
-![Footer](./assets/graph-view.jpg)
-
-### Dark Theme
-
-![Dark Theme](./assets/dark-theme.jpg)
+You can set a custom default sidebar depth using `sidebarDepth`, the default value is `0`
