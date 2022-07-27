@@ -66,6 +66,7 @@
     "install": "^0.13.0",
     "is-relative-url": "^3.0.0",
     "lodash.debounce": "4.0.8",
+    "moment": "^2.29.4",
     "note-graph": "^0.3.0",
     "path-browserify": "^1.0.1",
     "performant-array-to-tree": "^1.9.1",
