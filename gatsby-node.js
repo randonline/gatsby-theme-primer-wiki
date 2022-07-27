@@ -5,7 +5,7 @@ const urlJoin = require("url-join");
 const kebabCase = require(`lodash/kebabCase`);
 const { createFileNodeFromBuffer } = require("gatsby-source-filesystem");
 const fs = require("fs");
-const datefn = require("date-fns");
+const moment = require("moment");
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
