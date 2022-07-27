@@ -50,7 +50,6 @@ function Header({
         bg="header.bg"
         color="header.text"
       >
-        <Text>FOOFIE</Text>
         <Box display="flex" alignItems="center">
           <Link as={GatsbyLink} to="/" color="header.logo" mr={3}>
             {themeConfig.icon ? (
